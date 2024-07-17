@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    /*Cover preenche o fundo completo*/
+
+    /*backgound color image - atalhos*/
+    background: url(./assets/bg-mobile.jpg) no-repeat top center/ cover;
+}
+
+/*o "*" asterisco é o seletor universal*/
+body * {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+/*Seletor de ID é o #*/
+#container {
+    width: 360px;
+    height: 712px;
+    margin: auto;
+    margin-top: 56px auto 0px;
+
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+/*Imagem é um elemento inline portanto não aceita o margin:auto*/
+
+#profile img {
+    /*display: block;*/
+    width: 112px;
+    margin: auto;
+    border-radius: 100%;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/*Links*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
